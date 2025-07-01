@@ -1,0 +1,2 @@
+◦	Built an interactive tool to visualise sorting algorithms with animated bar charts. 
+◦	Enabled dynamic bar count selection and responsive design for all devices.
