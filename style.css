@@ -1,0 +1,94 @@
+body {
+    background-color: bisque;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#head1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.first, .second {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.head2 {
+    border: 2px solid black;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: wheat;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.head2:hover {
+    background-color: #f0c987;
+}
+
+#visualizer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 60vh;
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    background-color: #fef6e4;
+    flex-wrap: nowrap;
+}
+
+.bar {
+    flex: 0 0 auto;
+    width: 25px;
+    height: 50px;
+    background-color: #4CAF50;
+    border: 1px solid black;
+    margin: 2px;
+    text-align: center;
+    color: black;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 0.3rem;
+    transition: height 0.2s ease, background-color 0.2s ease;
+    border-radius: 4px;
+}
+
+/* Final sorted bar color */
+.bar.sorted {
+    background-color: #FFD700 !important;
+}
+
+/* Mobile styling */
+@media screen and (max-width: 600px) {
+    #head1 {
+        font-size: 2rem;
+    }
+
+    .head2 {
+        font-size: 0.9rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    .bar {
+        font-size: 0.2rem;
+        margin: 1px;
+    }
+}

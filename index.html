@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sorting Visualizer</title>
+</head>
+<body>
+    <h1 id="head1">SORTING VISUALIZER</h1>
+
+    <!-- Range input for number of bars -->
+    <div style="text-align: center; margin-bottom: 1rem;">
+        <label for="barCount">Number of Bars: </label>
+        <input type="range" id="barCount" min="10" max="150" value="50" />
+        <span id="barCountValue">50</span>
+        <button id="generate">Generate</button>
+    </div>
+
+    <!-- Preset size options -->
+    <div class="first">
+        <h2 class="head2" id="a1">SMALL-SIZE SET</h2>
+        <h2 class="head2" id="a2">MEDIUM-SIZE SET</h2>
+        <h2 class="head2" id="a3">LARGE-SIZE SET</h2>
+    </div>
+
+    <!-- Sorting algorithms -->
+    <div class="second">
+        <div class="head2" id="a4">BUBBLE SORT</div>
+        <div class="head2" id="a5">SELECTION SORT</div>
+        <div class="head2" id="a6">INSERTION SORT</div>
+        <div class="head2" id="a7">MERGE SORT</div>
+    </div>
+
+    <!-- Visualizer output -->
+    <div id="visualizer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
